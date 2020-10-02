@@ -1,4 +1,4 @@
-# Tryhackme box Pokemon writeup
+# Tryhackme box - Pokemon
 
 ## Recon
 
@@ -12,7 +12,30 @@ Credentials in the default apache site... xx:xx
 
 linpeas.sh findings to follow up on:
 
-OS: Linux version 4.15.0-112-generic (buildd@lcy01-amd64-021) (gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.12)) #113~16.04.1-Ubuntu SMP Fri Jul 10 04:37:08 UTC 2020
+    OS: Linux version 4.15.0-112
+
+    New path exported: /home/pokemon/bin:/home/pokemon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+    pkexec
+    AdminIdentities=unix-group:sudo;unix-group:admin
+
+    [+] .sh files in path
+    /usr/sbin/alsa-info.sh
+    /usr/bin/gettext.sh
+    /usr/bin/amuFormat.sh
+
+
+Nothing but a flag in webdirectory like the hint said.
+
+find fire for another flag...
+
+ls la ~
+    Videos folder changed after creation.
+    contains ash creds - ash is basicly root.
+
+
+
+
 
 
 
