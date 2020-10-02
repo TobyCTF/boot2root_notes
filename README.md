@@ -1,4 +1,4 @@
-#Notes from boot2root machines, found at places like tryhackme, hacakthebox or vulnhub
+# Notes from boot2root machines, found at places like tryhackme, hackthebox or vulnhub
 
 This is some of the notes i have taken during boot2root machines.
 
